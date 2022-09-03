@@ -161,4 +161,5 @@ document.onkeydown = function (e) {
             break;
     }
     drawAll();
+    // macから編集
 };
