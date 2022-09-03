@@ -140,6 +140,16 @@ function rotate() {
     return ntetro
 }
 
+// 落ちるスピード
+const GAME_SPEED = 500;
+
+setInterval(dropTetro, GAME_SPEED)
+
+function dropTetro() {
+    if (checkMove(0, 1)) tetro_y++;
+    drawAll();
+}
+
 // キーボード操作を取得
 document.onkeydown = function (e) {
     switch (e.keyCode) {
